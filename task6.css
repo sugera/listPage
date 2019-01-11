@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 3rem 0 5rem ;
+  /* padding-top: 3rem; */
+}
+
+/* 全局按钮 */
+button {
+  border: none;
+  outline: none;
+}
+
+/* 头部 */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5fc0cd;
+  height: 4rem;
+  z-index: 99;
+  text-align: center;
+}
+
+/* 按钮组 */
+.btn-group {
+  position: relative;
+  width: 10rem;
+  height: 100%;
+  top: 5px;
+}
+
+/* 头部按钮 */
+.header button {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+/* 左边按钮 */
+.left {
+  position: absolute;
+  left: 0;
+  background-color: #55a8b3;
+  color: #ffffff;
+
+}
+
+/* 右边按钮 */
+.right {
+  position: absolute;
+  background-color: #ffffff;
+  color: #5fc0cd;
+  z-index: 20;
+}
+
+/* 附近图标 */
+.bg-near {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: 2.1rem;
+  height: 2.2rem;
+  background: url('css_sprites.png') -0.5rem -0.5rem;
+  background-size: 9.4rem 8.45rem;
+}
+
+/* 列表头部下拉选择框布局 */
+.listhead {
+  position:relative;
+  border-bottom: 1px solid #e7e7e7;
+  height: 4rem;
+  color: #999999;
+  font-size: 1.35rem;
+}
+
+/* 下拉框样式 */
+select {
+  position: absolute;
+  appearance: none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url(./selectImg.png) no-repeat scroll right center transparent;
+  margin-left: 1rem;
+  border: none;
+  width: 80%;
+  height: 3rem;
+  top: 0.875rem;
+  outline: none;
+  background-size: 0.65rem 0.4rem
+}
+
+.col-xs-4{
+  position: relative;
+}
+
+.line{
+  position: absolute;
+  background: url(./z.png);
+  width:1px;
+  height: 3rem;
+  top: 5px;
+  right:0;
+}
+
+/* 列表内容样式 */
+.listContent {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0.3rem;
+  position: relative;
+  width: 100%;
+  height: 7rem;
+}
+
+
+/* 日期行样式 */
+.d{
+  position: absolute;
+  top: 2.5rem;
+  width: 100%;
+}
+
+/* 日期字样 */
+.list-group .date {
+  padding-left: 3rem;
+  height: 1rem;
+  font-size: 1.35rem;
+}
+
+/* 价格字样 */
+.list-group .price {
+  position: absolute;
+  right: 2rem;
+  padding-right: 1rem;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.lc{
+  position: absolute;
+  top: 2.25rem;
+  width: 100%;
+}
+
+
+/* 服务日期和位置文字 */
+.list-group .list-text {
+  position: absolute;
+  padding-left: 2rem;
+  vertical-align: middle;
+  color: #999999;
+  font-size: 1.2rem;
+}
+
+/* 价格 */
+.list-group .price {
+  /* position: relative; */
+  float: right;
+  padding-right: 1rem;
+  color: red;
+  font-size: 1.5rem;
+}
+
+/* 页面尾部布局 */
+.footer {
+  background: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+
+}
+
+/* 箭头图标 */
+.bg-arrow {
+  display: inline-block;
+  width: 0.95rem;
+  height: 1.65rem;
+  background: url('css_sprites.png') -7.95rem -0.5rem;
+  background-size: 9.4rem 8.45rem;
+}
+
+/* 首页图标 */
+.bg-home {
+  width: 100%;
+  height: 2rem;
+  background: url('css_sprites.png') -3.5rem -0.5rem;
+  background-size: 9.4rem 8.45rem;
+
+}
+
+/* 首页按钮 */
+.home {
+  width: 2.5rem;
+  color: #5fc0cd;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+/* 位置图标 */
+.bg-localtion {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 0.95rem;
+  height: 1.65rem;
+  background: url('css_sprites.png') -7.95rem -3.1rem;
+  vertical-align: middle;
+  background-size: 9.4rem 8.45rem;
+}
+
+/* 日历图标 */
+.bg-calendar2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url('css_sprites.png') -0.5rem -6.75rem;
+  background-size: 9.4rem 8.45rem;
+}
+
+/* 用户图标 */
+.bg-user {
+  width: 100%;
+  height: 2.05rem;
+  background: url('css_sprites.png') -0.5rem -3.7rem;
+  background-size: 9.4rem 8.45rem;
+}
+
+/* “我的”按钮 */
+.user {
+  width: 2.1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #999999;
+}
+
+/* 编辑图标 */
+.bg-Write {
+  width: 2rem;
+  height: 2.05rem;
+  background: url('css_sprites.png') -3.6rem -3.7rem;
+  background-size: 9.4rem 8.45rem;
+
+}
+
+/* 编辑按钮 */
+.write {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 10rem;
+  background-color: #5fc0cd;
+}
+
+/* 分割线 */
+/* .bg-z {
+  display: inline-block;
+  width: 1px;
+  height: 79px;
+  background: url('css_sprites.png') -138px -10px;
+} */
